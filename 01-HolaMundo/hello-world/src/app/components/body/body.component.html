@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col">
+        <h1>Ng if</h1>
+        <hr>
+        <div *ngIf="show" class="card" style="width: 100%;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Author : {{phrase.author}}</h5>
+                <p class="card-text">{{phrase.message}}</p>
+
+            </div>
+        </div>
+        <button class="btn btn-primary btn-block m-10" href="#" role="button" (click)="showFunc()">Mostrar/Ocultar</button>
+    </div>
+    <div class="col">
+        <h1>Ng for</h1>
+        <hr>
+        <ul class="list-group">
+            <li *ngFor="let item of superHeroes;let i = index" class="list-group-item">
+                {{i}} {{item}}
+            </li>
+        </ul>
+
+
+    </div>
+</div>

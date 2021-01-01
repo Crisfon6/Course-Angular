@@ -1,0 +1,14 @@
+<h1>Search: <small>{{filter | uppercase }}</small></h1>
+<hr>
+
+<div class="row" *ngIf="!heroes">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            Hero no found
+        </div>
+    </div>
+</div>
+<div class="card-columns ">
+
+    <app-card-hero [hero]="hero" [idx]="hero.idx" *ngFor="let hero of heroes; let i=index"></app-card-hero>
+</div>
